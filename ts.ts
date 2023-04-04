@@ -1,16 +1,29 @@
-// import { Component, OnInit } from '@angular/core';
-
+// import { Component, HostListener, OnInit } from '@angular/core';
 // @Component({
 //   selector: 'app-test',
 //   templateUrl: './test.component.html',
 //   styleUrls: ['./test.component.scss'],
 // })
 // export class TestComponent implements OnInit {
-//   text: string = ''
-//   header: string = ''
+//   @HostListener('document:copy', ['$event'])
+//   onCopy(event: ClipboardEvent) {
+//     if (event.clipboardData) {
+//     this.text = event.clipboardData.getData('text');
+//  }
+//     console.log('Copied text:', this.text);
+//   }
+//   onDivClick(text:string) {
+//     const textToCopy = text;
+//     const clipboard = navigator.clipboard;
+//     clipboard.writeText(textToCopy).then(() => {
+//       console.log('Text copied:', textToCopy);
+//     });
+//   }
 
-//   html: string = ''
-//   ts: string = ''
+//   text: string = '';
+//   header: string = '';
+//   html: string = '';
+//   ts: string = '';
 
 //   constructor() { }
 
